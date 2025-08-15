@@ -21,19 +21,19 @@
     body{margin:0;font-family:Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
 
     /* Full-bleed hero */
-    .hero{position:relative; width:100%; min-height:92vh; display:flex; align-items:center; overflow:hidden;
+    .hero{position:relative; width:100%; min-height:60vh; display:flex; align-items:center; overflow:hidden;
       background:
         radial-gradient(1000px 500px at 85% -10%, rgba(122,162,255,.18), transparent 60%),
         radial-gradient(800px 420px at -15% 30%, rgba(159,122,255,.16), transparent 60%),
         linear-gradient(180deg, #0d1430 0%, #0b1020 100%);
     }
-    .wrap{width:min(1200px,92vw); margin:0 auto; padding:48px 0; display:grid; grid-template-columns:140px 1fr; gap:24px; align-items:center}
+    .wrap{width:min(1100px,92vw); margin:0 auto; padding:32px 0; display:grid; grid-template-columns:120px 1fr; gap:18px; align-items:center}
 
     .app-icon{width:140px; aspect-ratio:1/1; border-radius:22%; overflow:hidden; box-shadow:var(--shadow); border:1px solid rgba(255,255,255,.08)}
     .app-icon img{width:100%; height:100%; object-fit:cover; display:block}
 
-    h1{font-size:clamp(28px,5vw,44px); margin:0 0 10px}
-    .tagline{color:var(--muted); font-size:clamp(14px,2.4vw,18px); margin:0 0 18px}
+    h1{font-size:clamp(26px,4.2vw,38px); margin:0 0 6px}
+    .tagline{color:var(--muted); font-size:clamp(14px,2vw,16px); margin:0 0 12px}
 
     .cta{display:flex; flex-wrap:wrap; gap:12px}
     .btn{display:inline-flex; align-items:center; gap:10px; padding:13px 18px; border-radius:999px; text-decoration:none; font-weight:700; border:1px solid rgba(255,255,255,.1); transition:transform .06s ease, filter .2s ease}
@@ -42,17 +42,17 @@
     .btn:hover{transform:translateY(-1px); filter:brightness(1.06)}
 
     /* Body sections */
-    .container{width:min(1100px,92vw); margin:0 auto; padding:36px 0 72px}
+    .container{width:min(1000px,92vw); margin:0 auto; padding:24px 0 48px}
 
-    .features{display:grid; gap:14px; grid-template-columns:repeat(2,1fr)}
-    .feature{background:var(--card); border:1px solid rgba(255,255,255,.08); border-radius:var(--radius); padding:16px; box-shadow:var(--shadow)}
+    .features{display:grid; gap:12px; grid-template-columns:repeat(2,1fr)}
+    .feature{background:var(--card); border:1px solid rgba(255,255,255,.08); border-radius:12px; padding:14px; box-shadow:var(--shadow)}
     .feature h3{margin:6px 0 6px; font-size:18px}
     .feature p{margin:0; color:var(--muted); font-size:14px}
 
-    .screens{margin-top:30px}
-    .screens h2{font-size:20px; margin:0 0 10px}
-    .rail{display:grid; grid-auto-flow:column; grid-auto-columns:60%; gap:12px; overflow-x:auto; padding:8px; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch}
-    .shot{scroll-snap-align:start; background:var(--card2); border-radius:12px; overflow:hidden; border:1px solid rgba(255,255,255,.08); box-shadow:var(--shadow)}
+    .screens{margin-top:20px}
+    .screens h2{font-size:18px; margin:0 0 8px}
+    .grid{display:grid; grid-template-columns:repeat(4, 1fr); gap:12px}
+    .shot{background:var(--card2); border-radius:10px; overflow:hidden; border:1px solid rgba(255,255,255,.08); box-shadow:var(--shadow)}
     .shot img{width:100%; height:auto; display:block}
 
     .links{margin-top:28px; display:grid; gap:12px; grid-template-columns:repeat(2,1fr)}
@@ -60,7 +60,9 @@
     .link-card a{color:var(--text)}
     footer{margin-top:40px; color:var(--muted); font-size:13px; text-align:center}
 
-    @media (max-width:860px){.wrap{grid-template-columns:1fr; text-align:center}.cta{justify-content:center}.features{grid-template-columns:1fr}.links{grid-template-columns:1fr}.rail{grid-auto-columns:85%}}
+    @media (max-width:1024px){.grid{grid-template-columns:repeat(3, 1fr)}}
+    @media (max-width:760px){.wrap{grid-template-columns:1fr; text-align:center}.cta{justify-content:center}.features{grid-template-columns:1fr}.links{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2, 1fr)}}
+    @media (max-width:440px){.grid{grid-template-columns:1fr}}.cta{justify-content:center}.features{grid-template-columns:1fr}.links{grid-template-columns:1fr}.rail{grid-auto-columns:85%}}
   </style>
 </head>
 <body>
@@ -70,9 +72,9 @@
       <div>
         <h1>Rokie: Remote for Roku TV</h1>
         <p class="tagline">Control & Cast to Your Roku</p>
-        <div class="cta">
-          <a class="btn primary" href="https://apps.apple.com/us/app/rokie-remote-for-roku-tv/id6751042366" target="_blank" rel="noopener">Download on the App Store</a>
-          <a class="btn ghost" href="mailto:adriennecrosbykwd9@gmail.com">Support</a>
+        <div class=\"cta\">
+          <a class=\"btn primary\" href=\"https://apps.apple.com/us/app/rokie-remote-for-roku-tv/id6751042366\" target=\"_blank\" rel=\"noopener\">Download on the App Store</a>
+          <a class=\"btn ghost\" href=\"https://docs.google.com/document/d/1kmvZ-mwBXZPVFUpVvRBAKMs3tdNPal_30Ho84dgQz6Q/edit?tab=t.0\" target=\"_blank\" rel=\"noopener\">Support</a>
         </div>
       </div>
     </div>
@@ -89,11 +91,11 @@
 
     <section class="screens" aria-label="Screenshots">
       <h2>Screenshots</h2>
-      <div class="rail">
-        <figure class="shot"><img src="assets/s1.png" alt="Screenshot 1" /></figure>
-        <figure class="shot"><img src="assets/s2.png" alt="Screenshot 2" /></figure>
-        <figure class="shot"><img src="assets/s3.png" alt="Screenshot 3" /></figure>
-        <figure class="shot"><img src="assets/s4.png" alt="Screenshot 4" /></figure>
+      <div class=\"grid\">
+        <figure class=\"shot\"><img src=\"assets/s1.png\" alt=\"Screenshot 1\" /></figure>
+        <figure class=\"shot\"><img src=\"assets/s2.png\" alt=\"Screenshot 2\" /></figure>
+        <figure class=\"shot\"><img src=\"assets/s3.png\" alt=\"Screenshot 3\" /></figure>
+        <figure class=\"shot\"><img src=\"assets/s4.png\" alt=\"Screenshot 4\" /></figure>
       </div>
       <p style="color:var(--muted); font-size:13px;">Swipe to view more.</p>
     </section>
